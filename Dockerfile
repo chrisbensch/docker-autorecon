@@ -34,4 +34,4 @@ RUN git clone https://gitlab.com/saalen/ansifilter \
     && make \
     && make install
 
-#ENTRYPOINT ["autorecon"]
+ENTRYPOINT ["autorecon"]
