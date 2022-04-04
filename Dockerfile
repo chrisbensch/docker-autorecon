@@ -29,7 +29,6 @@ RUN git clone https://github.com/cddmp/enum4linux-ng \
     && cd / \
     && rm -rf enum4linux-ng
     
-
 RUN git clone https://gitlab.com/saalen/ansifilter && cd ansifilter && make && make install
 
-ENTRYPOINT ["autorecon"]
+#ENTRYPOINT ["autorecon"]
