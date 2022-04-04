@@ -3,8 +3,6 @@ FROM kalilinux/kali-rolling
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/autorecon
 
-RUN mkdir -p /autorecon/results
-
 COPY ./src/ /autorecon/
 
 RUN sed -i "s/\/home\/{getuser()}\/Documents/\/autorecon\/results/g" /autorecon/autorecon
