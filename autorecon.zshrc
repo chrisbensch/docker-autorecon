@@ -1,0 +1,1 @@
+echo "alias autorecon="docker run -it -v /home/dev/Documents/pentest:/autorecon/results autorecon $1"" >> ~/.zshrc
